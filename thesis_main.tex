@@ -109,22 +109,25 @@
 \maketitle
 
 % Abstract, up to 350 words
-%\input{abstract} % it's in a separate file
-
+\input{abstract} % it's in a separate file
+\addcontentsline{toc}{chapter}{Abstract}
 % Dedication (optional)
-%\thesisdedication{Dedicated to grandma, and to grammar.}
+\thesisdedication{Dedicated to grandma, and to grammar.}
 
 % Preface and/or acknowledgements (optional)
-%\input{acknowledgements} % it's in a separate file
+\input{acknowledgements}
+\addcontentsline{toc}{chapter}{Preface and Acknowledgements}
+% it's in a separate file
 
 % Contents, lists of tables and figures
-\settocdepth{section} % choose chapter, section, subsection \cleardoublepage\tableofcontents
+\settocdepth{section} %choose chapter, section, subsection
+\cleardoublepage\tableofcontents
 %\cleardoublepage\listoffigures
 %\cleardoublepage\listoftables
 
 % Glossary (optional)
-%\input{glossary}
-
+\input{glossary}
+\addcontentsline{toc}{chapter}{Glossary}
 % ====================================================
 %
 % MAINMATTER
