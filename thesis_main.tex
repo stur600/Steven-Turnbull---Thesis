@@ -20,11 +20,14 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{natbib}
 
-%\usepackage{graphicx} % for inserting graphics files
-%\usepackage{appendix} % for appendices
+\usepackage{graphicx} % for inserting graphics files
+\usepackage{appendix} % for appendices
 
-%\usepackage{hyperref} % for formatting web addresses and other URLs
+\usepackage{hyperref} % for formatting web addresses and other URLs
+\usepackage{csquotes} % for block quotes
+
 %\urlstyle{same} % try also tt, sf if this option doesn't produce clear enough output
 
 % Readability options
@@ -141,9 +144,15 @@
 %
 % ====================================================
 
-%\input{chapter1} % I hope that you have better titles than this
-%\input{chapter2} 
-%\input{chapter3} 
+\input{C1 - Introduction.tex} 
+\input{C2 - Student Pathways.tex}
+\input{C3 - Bourdieu Networks.tex} 
+\input{C4 - Science Capital Self-Concept.tex} 
+\input{C5 - Understanding Capital Accumulation.tex}
+\input{C6 - Experiences of Science Capital.tex}
+\input{C7 - Opportunities For Intervention.tex}
+\input{C8 - Summary and Conclusion.tex}
+
 
 % ====================================================
 %
@@ -155,9 +164,12 @@
 % ====================================================
 \cleardoublepage % start afresh on a new page
 \setcounter{page}{1} % re-sets the page counter
-%\appendixpage* % makes a page to mark beginning of appendices
-% \input{appendix1} 
+\appendixpage* % makes a page to mark beginning of appendices
+\input{A1 - ParticipantInformation.tex} 
 
 %\printbibliography[title={Works cited}, heading=bibintoc]
+\bibliography{bibfile.bib}
+\bibliographystyle{apalike}       % APA-like style
+
 
 \end{document}
