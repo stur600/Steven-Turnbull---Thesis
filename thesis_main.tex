@@ -28,6 +28,12 @@
 \usepackage{hyperref} % for formatting web addresses and other URLs
 \usepackage{csquotes} % for block quotes
 
+\usepackage{lscape} %for landscape/rotated figures and tables
+
+\usepackage{rotating}
+
+\usepackage{afterpage}
+
 %\urlstyle{same} % try also tt, sf if this option doesn't produce clear enough output
 
 % Readability options
@@ -112,13 +118,13 @@
 \maketitle
 
 % Abstract, up to 350 words
-\input{abstract} % it's in a separate file
+\input{Abstract/abstract.tex} % it's in a separate file
 \addcontentsline{toc}{chapter}{Abstract}
 % Dedication (optional)
 \thesisdedication{Dedicated to grandma, and to grammar.}
 
 % Preface and/or acknowledgements (optional)
-\input{acknowledgements}
+\input{Acknowledgements/acknowledgements.tex}
 \addcontentsline{toc}{chapter}{Preface and Acknowledgements}
 % it's in a separate file
 
@@ -129,7 +135,7 @@
 %\cleardoublepage\listoftables
 
 % Glossary (optional)
-\input{glossary}
+\input{Glossary/glossary.tex}
 \addcontentsline{toc}{chapter}{Glossary}
 % ====================================================
 %
@@ -144,14 +150,14 @@
 %
 % ====================================================
 
-\input{C1 - Introduction.tex} 
-\input{C2 - Student Pathways.tex}
-\input{C3 - Bourdieu Networks.tex} 
-\input{C4 - Science Capital Self-Concept.tex} 
-\input{C5 - Understanding Capital Accumulation.tex}
-\input{C6 - Experiences of Science Capital.tex}
-\input{C7 - Opportunities For Intervention.tex}
-\input{C8 - Summary and Conclusion.tex}
+\input{C1 - Introduction/C1 - text.tex}
+\input{C2 - Student Pathways/C2 - text.tex}
+\input{C3 - Bourdieu Networks/C3 - text.tex} 
+\input{C4 - Science Capital Self-Concept/C4 - text.tex} 
+\input{C5 - Understanding Capital Accumulation/C5 - text.tex}
+\input{C6 - Experiences of Science Capital/C6 - text.tex}
+\input{C7 - Opportunities For Intervention/C7 - text.tex}
+\input{C8 - Summary and Conclusion/C8 - text.tex}
 
 
 % ====================================================
@@ -165,7 +171,7 @@
 \cleardoublepage % start afresh on a new page
 \setcounter{page}{1} % re-sets the page counter
 \appendixpage* % makes a page to mark beginning of appendices
-\input{A1 - ParticipantInformation.tex} 
+\input{Appendices/A1 - ParticipantInformation.tex} 
 
 %\printbibliography[title={Works cited}, heading=bibintoc]
 \bibliography{bibfile.bib}
