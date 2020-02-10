@@ -1,5 +1,6 @@
 \chapter[Bourdieu, Networks, and Movements][]{Bourdieu, networks, and movements: Using the concepts of habitus, field and capital to understand a network analysis of gender differences in undergraduate physics}
 
+\section{Preamble}
 The following work was published in PLoS ONE on the 2nd of September 2019 (https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0222357). Coauthors included Kirsten Locke\textsuperscript{1,2}, Fr\'ed\'erique Vanholsbeeck \textsuperscript{3,4}, and 
 Dion R. J. O'Neale\textsuperscript{2,3}
 \footnote{\textbf{1} Critical Studies in Education, Faculty of Education and Social Work, University of Auckland, Auckland, New Zealand
@@ -8,14 +9,16 @@ Dion R. J. O'Neale\textsuperscript{2,3}
 \\
 \textbf{3} Department of Physics, University of Auckland, Auckland, New Zealand
 \\
-\textbf{4} The Dodd-Walls Centre, University of Auckland, Auckland, New Zealand}
+\textbf{4} The Dodd-Walls Centre, University of Auckland, Auckland, New Zealand}. 
 
-\section*{Abstract}
+This article was written in the first year of my PhD, and serves as the basis for the whole thesis. It provides the bridge between understanding \textit{what} science education looks like in terms of broad patterns of enrolments, and understanding \textit{why} these patterns exist. The methods follow on from Chapter 2, in that I employ the same network analysis procedures only on a different dataset. Instead of NCEA data, I now explore patterns in course enrolment data for undergraduate physics students at the University of Auckland. I also frame this analysis in the sociological theory of Pierre Bourdieu using a simple model of his concepts of capital, habitus, and field. 
+
+\section{Abstract}
 Current trends suggest that significant gender disparities exist within Science, Technology, Engineering, and Mathematics (STEM) education at university, with female students being underrepresented in physics, but more equally represented in life sciences (e.g., biology, medicine). To understand these trends, it is important to consider the context in which students make decisions about which university courses to enrol in. The current study seeks to investigate gender differences in STEM through a unique approach that combines network analysis of student enrollment data with an interpretive lens based on the sociological theory of Pierre Bourdieu. We generate a network of courses taken by around 9000 undergraduate physics students (from 2009 to 2014) to quantify Bourdieu's concept of field. We identify the fields in which physics students participate by constructing a weighted co-enrollment network and finding communities within it. We then use odds ratios to report gender differences in transverse movements between different academic fields, and non-parametric tests to assess gender differences in vertical movements (changes in students' achievement rankings within a field). Odds ratios comparing the likelihood of progression from one field to another indicate that female students were more likely to make transverse movements into life science fields. We also found that university physics did a poor job in attracting high achieving students, and especially high achieving female students. Of the students who did choose to study physics at university, low and middle achieving female high school students were more likely to decrease their relative rank in their first year compared to their male counterparts. Low achieving female students were also less likely to continue with physics after their first year compared to their male counterparts. Results and implications are discussed in the context of Bourdieu's theory, and previous research. We argue that in order to remove constraints on female students' study choices, the field of physics needs to provide a culture in which all students feel like they belong.
 
 
 
-\section*{Introduction}
+\section{Introduction}
 Historically, women have been underrepresented in Science, Technology, Engineering and Mathematics (STEM) disciplines. This is a concerning issue today internationally, and at all stages of higher education.\cite{Abraham_2014,Stevanovic_2013,Smith_2011} More recent studies indicate specific gender disparities exist within the sub-fields that comprise STEM.\cite{mullis2016timss} Female students tend to be underrepresented in physics in higher education, and this is evidenced by research from the United States\cite{NSF, Cunningham_2015,Kost_Smith_2010,Heilbronner_2012}, Europe\cite{Huyer2007, Stevanovic_2013, InstituteofPhysics_2012, InstituteofPhysics_2013, Smith_2011}, Asia-Pacific regions\cite{EducationCounts_2016a, Kennedy_2014} and Africa.\cite{Semela_2010} In contrast, the same research shows that the life science subjects (biology and medicine) tend to have more of a gender balance. Further studies have shown that gender disparities exist not only in subject participation, but in the levels of confidence that students have across subjects. Female students tend to be less confident than their male peers in physics\cite{kelly2016social, Hofer_2016} and calculus\cite{Ellis_2016}, even after controlling for actual academic achievement.\cite{marshman2018female} Why do we see gender differences in the physical and mathematical science subjects, but not the life science subjects? Much research has been dedicated to understanding the extent, causes, and possible solutions to this issue.\cite{cheryan2017some,Brewe_2016, Blickenstaff_2005}
 
 The current study investigates the outcomes for male and female physics students at the University of Auckland (UoA) --- the largest university in New Zealand. We adopt a unique approach, by combining quantitative network analysis with a research framework based on Pierre Bourdieu's sociological theory.\cite{Bourdieu1984} Whilst we argue that these two approaches can provide a detailed understanding of gender disparities in student enrollment patterns, there is a lack of research in this area (for examples of how network analysis and Bourdieu have been previously used together, see the work of de Nooy\cite{de2003fields}, and Bottero and Crossley\cite{bottero2011worlds}). We combine these approaches by using network analysis to provide a representation of Bourdieu's concept of field, with an emphasis on his ideas of transverse and vertical movements (students moving from one field to another, and moving upwards and downwards in achievement rankings in a field). In order to avoid misinterpretation of Bourdieu's theory, which is easily done when ``bits and pieces'' of it are used\cite{Bourdieu1992}, we combine our representation of field with Bourdieu's concepts of habitus and capital. We argue that network analysis can bring to light the complex patterns of students' subject enrollment, whilst Bourdieu's theory offers a rich theoretical framework to explain these patterns. We place the findings of our network analysis in a broad socio-cultural context that brings to light the complex interactions between society, gender and subject discipline. To avoid confusion, the following sections will use `field' as a technical term referring to the Bourdieu's definition (which will be explained in more detail in the next section), and `discipline' as a non-technical term that describes the different STEM domains. 
@@ -25,7 +28,7 @@ We begin by introducing a simple model of Bourdieu's theory, using the field of 
     The social space, being structured in two dimensions (overall capital volume and dominant/dominated capital) allows two types of movement... vertical movements, upwards or downwards in the same vertical sector, that is in the same field... and transverse movements, from one field to another, which may occur either horizontally or between different levels.
 \end{quote} In science education, individual's may move from one field to another (i.e., from physics to life science), but also upwards and downwards in achievement rankings in the field. We use these concepts of movements to guide our investigation. We seek to understand whether there are gender differences in the number of students moving from physics to other fields, and also in the changes in achievement rankings of students in physics. We close this article with a discussion of our results in the broader context of previous research and Bourdieu's concepts of capital and habitus. 
 
-\section*{Theoretical Framework}
+\section{Theoretical Framework}
 The metaphor of the leaky pipeline is often used to describe the attrition of women from physics\cite{Huyer2007, Schiebinger_2001}, in that women are more likely to drop out with each transition between key stages of education (particularly secondary school to university). This metaphor can be criticized for not only stigmatizing individuals that drop out of the pipeline, but for also being too simplistic.\cite{Cannady2014} It is important to emphasize contextual factors, such as the presence of gender-stereotypes\cite{Nosek_2009} (e.g., men study science, women study humanities) that impact on the decisions that students make. It is also important to consider the complex nature of students' enrollment patterns; in reality a student's journey through university study follows a complex network of unique pipes, rather than a singular pipeline. The current study employs a research framework that builds on the limitations of the leaky pipeline. We seek to place our results in a wider socio-cultural context, by harnessing a research framework adapted from the work of Pierre Bourdieu\cite{Bourdieu1984} (see Fig~\ref{Fig1}). We employ Bourdieu's concepts of capital, habitus and field to interpret our findings, and place them in the context of previous studies that have investigated gender differences in STEM subject selection. 
 
 \begin{figure}[!ht]
@@ -39,7 +42,7 @@ The Bourdieusian framework used in the current study is adapted from the origina
 
 The following sections will outline Bourdieu's concepts of field, capital and habitus. We apply these concepts to a host of previous research regarding gender disparities in science to outline the socio-cultural context in which students are placed. More specifically, we outline research that describes the state of the field of physics and the distribution of capital within the field of physics. We then discuss the interaction of capital with habitus --- the system of dispositions that is formed in relation to the field. We describe how the ``smog of bias''\cite{Kost_Smith_2010} that targets women in physics may impact on habitus, and thus practices within the field, such as choosing to discontinue physics study. 
 
-\subsection*{Field}
+\subsection{Field}
 For Bourdieu, the world is separated into a collection of different fields.\cite{Bourdieu1984} A field can be considered as a system of social locations, where each individual is objectively ranked by the resources (capital) they have relative to others. For example, in the field of tertiary science education, a lecturer ranks higher than a student, whilst a high achieving student ranks higher than a low achieving student. To begin to the understand the hierarchical nature of a field, we must first understand the concept of \textit{capital}. Originally conceived within economics, capital was defined by Adam Smith (in 1887) as ``That part [of a person's wealth] that he expects to provide [them] with \textellipsis income\textellipsis''.\cite{Smith_1887} Bourdieu interpreted capital as a legitimate, valuable and exchangeable resource that individuals can use to gain advantage in society.\cite{Bourdieu_1986}
 
 Therefore, the rankings are determined by how we define what is valuable and legitimate in the field. The practices of an individual within the field, which are guided by the individual's internal dispositions (habitus), are judged by criteria internal to the domain of activity.\cite{hilgers2014introduction} Individuals with a high volume of valued capital will hold power within the field. For example, high achieving students have high volumes of capital in the field due to their course grades (a signal of success), whilst lecturers and researchers have a greater volume of capital in the form of qualifications and research experience. In the field of tertiary science education, lecturers and researchers sit at the top of the hierarchy, and decide what kinds of capital are valued or devalued (e.g., professors often decide the course content and manner of teaching for undergraduate students at university). We will discuss Bourdieu's conceptualization of capital and the way it can inform gender equity research in the following section. Before then, we will outline a brief description of how the field of physics is structured from an objective point of view in relation to gender.
@@ -50,10 +53,10 @@ Reports from New Zealand in 2017 show that, overall, secondary school science ha
 
 The above outlines clear evidence of gender disparities in the field of science, internationally and in New Zealand specifically. Whilst useful, these figures only provide a static, surface-level understanding of what is happening in the field of science education. As shown in Fig \ref{Fig1}, the practices and behaviours represented in the field (such as enrollment patterns) are generated through the interaction of capital (resources) and habitus (internal dispositions). We will now visit these two concepts, applying them to previous research, to understand why gender disparities in science education are common.   
 
-\subsection*{Capital}
+\subsection{Capital}
 The objective rankings within a field are defined by the distribution of capital, and this can be used to inform gender equity research in science.\cite{Kelly_1985} Different fields have different forms of logic as to what forms of capital are of value. Using a basic example, a science qualification is worth more in the field of science than in other academic fields. Capital is complex and may take many forms, each of which may be valued differently depending on the dominant logic of the field. According to Bourdieu\cite{Bourdieu_1986}, capital has four forms: economic (e.g., financial resources), cultural (non-financial assets, such as physical appearance, spoken language, academic achievement), social (e.g., an individual's social network), and symbolic (prestige and recognition, such as awards). Individuals who begin their life with more capital, be that through inheritance or immediate exposure to the dominant culture, will be more able to gain personal and social advantages. For example, a student who is born into a family that speaks the dominant language of an educational institution may find it easier to learn, and a student with greater economic wealth may be more able to afford the costs associated with tertiary study (e.g., tuition fees, relocation, travel). The value of capital is not solely determined by form, but also by factors such as the manner of acquisition, and the personal characteristics of the owner. Issues emerge when an individual's capital is devalued unjustly by the `rules' operating in the field. For example, international research has shown that female physicists tend to receive fewer opportunities and career enhancing resources compared to objectively equal male physicists.\cite{Ivie_2013} Previous research of tertiary students suggests that female students may be more likely to discontinue physics education, regardless of performance.\cite{Ellis_2016,Ost_2010} Since disparities in enrollment still exist even after controlling for academic achievement, it is likely that capital is not the dominant factor in driving gender differences in physics education outcomes. Research does suggest, however, that the gender disparities in physics enrollments can be understood in terms of students' identity\cite{Brown2010,Hazari_2010,Hazari2013,Brewe_2016,Hazari2017} and self-confidence\cite{Litzler2014,Concannon2009,Sharma_2011,Beth_Kurtz_Costes_2008,Sawtelle_2012} -- factors that can be tied to Bourdieu's concept of habitus.
 
-\subsection*{Habitus}
+\subsection{Habitus}
 Capital, in its various forms, interacts with habitus (Fig~\ref{Fig1}); a construct defined by Bourdieu as a ``system of dispositions''\cite{Bourdieu1984} formed in relation to a field. Whilst capital is what determines one's position within the field, habitus is what determines one's disposition towards it.\cite{Bourdieu1992} An individual's habitus is the internalization of the socio-cultural and historical context of a field, and it operates ``below the level of consciousness and language''.\cite{Bourdieu1984} Nash\cite{Nash1999} understood habitus as ``a system of schemes of perception and discrimination embodied as dispositions reflecting the entire history of the group and acquired through the formative experiences of childhood''. In simple terms, habitus is what we use to determine whether the field is something we are interested in, based on evidence present in the environment. Whilst habitus is generally formed during childhood within the family\cite{Dimaggio1982}, it is continually reconstructed and transformed as an individual operates in society. For example, a student who grows up in a family that places high value on science may share the same disposition.\cite{archer2013aspires} However, an individual may not choose to pursue science when faced with evidence that the field is not for them (for example, receiving poor grades, being treated poorly, lack of role models). Based on this internal matrix of dispositions, an individual's lifestyle practices are generated. According to Bourdieu, the collection of each individual lifestyle produced by habitus then constitutes the ``represented social world''\cite{Bourdieu1984} --- the way that things appear to be. As the representation of the social world also influences the formation of habitus, the world and habitus share a reciprocal relationship. This relationship facilitates the cultural reproduction of inequity over time. 
 
 Habitus can be used as a concept to explain the gender disparities in science enrollments. Based on what they see in their represented social world, students will ``[refuse] what they are refused (`that's not for the likes of us'), [adjust] their expectations to their chances, [and define] themselves as the established order defines them.''.\cite{Bourdieu1984} Based on what students see in their environment, they will make decisions on what they feel is a realistic study choice. Archer and colleagues explain this idea further: ``social axes of `race'/ethnicity, social class, and gender all contribute to shaping what an individual perceives to be possible and desirable.''.\cite{Archer_2012} The manner by which students perceive the different scientific disciplines, as they are represented in society, likely plays an important role in influencing their desire to study those disciplines. 
@@ -63,11 +66,11 @@ Every student holds beliefs about their possible educational paths. However, the
 
 Evidence suggests that the gender differences in subject interest may not be present in early childhood, but emerge by the end of secondary school.\cite{Baram_Tsabari_2010} This lends credence to the idea that habitus is formulated over time; as individuals become increasingly aware of societal norms, their interests align with what (through their habitus) seems like a realistic study choice. These stereotypical gender preferences may persist when it comes to the types of science-related career that secondary school students aim for\cite{Kj_rnsli_2011}, and students' choice of STEM major at university.\cite{Bottia_2015, Sadler_2012} At university level, gender disparities may even widen further; a study of physics students at a university in the United States found that female students are more likely to see their interest in physics diminish during introductory physics.\cite{Kost_Smith_2010}
 
-\subsection*{The Current Study}
+\subsection{The Current Study}
 
 The current study was motivated by the need to understand any potential gender differences in the movements and course selections that students make during their undergraduate physics study in general, and at the University of Auckland (UoA) in particular. Our study seeks to not only understand the movements of physics students across and within academic fields at the UoA, but to employ a unique approach that highlights the complexity of student enrollments and places them in a wider socio-cultural context. To do so, we employ network analysis on student enrollment records to provide a detailed representation of the field of physics at the UoA. The network analysis approach builds on the work of\cite{de2003fields} and\cite{bottero2011worlds} who described the utility of combining network analysis with Bourdieu. Boterro and Crossley\cite{bottero2011worlds} provide an example of how networks of social relations can provide a representation of a field. The current study expands on this area of research by conceptualizing academic fields as communities detected in networks of course selection. Furthermore, we draw attention to under-utilised concepts of Bourdieusian theory: the concepts of transverse movement between fields, and vertical movements within fields. We focus on providing a basic description of the movements that physics students make within and between academic fields at the UoA. Our study echoes previous studies that analyse the pathways that students take through education. However, by combining the network analysis approach with the sociological theory outlined by Bourdieu\cite{Bourdieu1984}, we move beyond simple models to a more nuanced description of the way habitus can be depicted/demonstrated through network analysis as both a cause and a symptom of gender stratification. 
 
-\subsubsection*{Transverse and Vertical Movements}
+\subsubsection{Transverse and Vertical Movements}
 Bourdieu's theory encourages us to view student movements across STEM domains in relation to the structures of the field, the volume of capital a student holds, and the manner by which habitus guides practices in the field. In addition to our objective representation of the field of physics, we also consider what may motivate these movements, based on evidence from previous research.
 
 According to Bourdieu, society is structured in a manner that allows individuals to engage in two types of movement: vertical and transverse: ``vertical movements, upwards or downwards in the same vertical sector, that is in the same field... and transverse movements, from one field to another, which may occur either horizontally or between different levels''.\cite{Bourdieu1984} Vertical movements upwards require an increase in the prized capital in the field. In tertiary science education, this may be represented by grades in science courses over time. Transverse movements entail a shift to a new field, and the conversion of accumulated capital into the capital accepted in the new field. For example, a student making a transverse movement from physics to life sciences will have to assimilate to a different skill set, and even a different culture. Transverse movements can be used as a strategy to protect a relative vertical position: 
@@ -84,15 +87,15 @@ In the current study, we conceptualize cultural capital in its institutionalized
 
 Whilst our data do not allow us to conceptualize forms of capital other than institutionalised cultural capital (i.e, course grades), our methodology leaves the opportunity for future research to incorporate other measures of students' capital. More specifically, future research should investigate how other forms of capital are distributed across fields and relate to the movements that students make. 
 
-\section*{Materials and Methods}
+\section{Materials and Methods}
 
-\subsection*{Data}
+\subsection{Data}
 The current study uses administrative student data from the UoA from 2009 to 2014 (N $=$ 8905), including demographic and academic information. For the purposes of this study, the only demographic variable considered in the analysis was gender. Academic variables include course codes that students were enrolled in, and the year and semester in which they were enrolled. We did not have information regarding students' degree plans or majors. Records of non-physics courses were included as long as a student had enrolled in at least one physics course during the study period. At the UoA, students are required to take two courses outside of their major, with the options being titled as general education courses. We excluded all students who studied a general education course in physics from our analysis. We know that these students are not physics students, and they do not offer a representative sample of students from outside of physics.
 
 A typical Bachelor of Science physics degree at the UoA takes place over the course of three years. In their first year, physics students are required to take Advancing Physics 1 (AP1) and then Advancing Physics 2 (AP2) before moving onto second year physics. Life science students (those majoring in biomedical sciences or medicine) are required to take Physics for Life Sciences (PLS) in their first year. PLS is taught by the physics department. This means that, despite our study population including only students who took a physics course, many of the students present in our data set were likely majoring in life sciences. Our population therefore allows us to compare the outcomes for students in the physics and life sciences disciplines. AP1 and PLS cover the same content, but are presented in a different manner. One significant difference between AP1 and PLS is that AP1 assumes a knowledge of calculus, while PLS does not. This is an important point to consider, as a mathematics background may be an important form of science related capital\cite{Black2016}, and female students may be more likely to drop out of physics education after taking calculus.\cite{Ellis_2016} The current study was able to compare the AP1 and PLS subsets of the general physics population to account for a student's first year disciplinary intentions. PLS is still considered an acceptable prerequisite for AP2 in lieu of AP1, although it is rare for students to take this route. 
 
 
-\subsection*{Measures}
+\subsection{Measures}
 
 The following variables were used in the analysis:
 \begin{itemize}
@@ -104,12 +107,12 @@ The following variables were used in the analysis:
 
 \end{itemize}
 
-\subsection*{Procedure}
+\subsection{Procedure}
 Although Bourdieu offers a rich theory to interpret movements within and between fields, we are left with the challenge of defining what constitutes a field. Whilst it could be argued that every student who takes a physics course at university is a physics student, we believe that this is not sufficient. Students may be enrolled in a subject discipline on paper, but actually be fully engaged in a separate field of study. A good example of this is PLS. PLS students may be considered physics students on paper, but their main field of study is likely biomedical sciences or medicine. Through network analysis, we are able to define academic fields in terms of the patterns of course selection. We represent course selection patterns as a network, where nodes represent university courses and edges represent the enrollments of students within courses. We then explore the structure of the network by investigating the communities of courses that tend to be taken together by students. Our approach, similar to blockmodelling approaches\cite{bottero2011worlds,white1976social}, allows us to take a complex network and reduce it to its core structure. It does this by identifying communities of nodes that tend to share more edges. We can then explore patterns at the level of communities instead of at the level of nodes. In the current study, we interpret these communities as academic fields. Following this, we are able to investigate gender differences in the transverse that students make across the fields represented in our network. We supplement our network with course achievement data to compare vertical movements within and across fields. 
 
 The following section outlines the series of steps that were used to generate the course network and use it to answer our research questions regarding gender differences in students transverse and vertical movements. Through the analysis of course relationships, we can take a non-biased approach to defining the fields in which students are located. 
 
-\subsection*{Forming the Network}
+\subsection{Forming the Network}
 To begin the network analysis, we structured the data as an adjacency matrix, where rows and columns represent the courses taken by students in our sample, and a cell value is the number of students who took both course $i$ and course $j$ within their undergraduate degree. Whilst we could define edges in relation to the frequency of students who took a pair of courses, this does not accurately reveal the underlying community structure of students' preferences. For example, if a pair of courses includes one course with a large number of enrollments, the edge linking these courses will have a large associated weight as a consequence of the large population of one course. However, this may not be a true indication of students' preference for co-enrollment in these courses. We therefore account for the course populations by normalizing the matrix using a Revealed Comparative Preference (RCP) score. RCP measures the fraction of students from a course $j$ who also took a second course $i$, relative to the overall fraction of students taking course $i$, across all other courses. More specifically: 
 $$RCP(i,j) = \frac{x_{ij}/x_j}{x_i/x}$$
 where $x_{ij}$ is the number of students taking both course $i$ and $j$, $x_j$ (or $x_i$) is the total number of students taking course $j$ (respectively, course $i$), and $x$ is the total number of unique students enrolled in any course.
@@ -164,7 +167,7 @@ Surgery & 350 & 0.43 & 2800 \\ \hline
 \end{table}
 
 
-\subsubsection*{Transverse Movements}
+\subsubsection{Transverse Movements}
 To investigate whether there are gender differences in UoA physics students moving from one academic field to another during their undergraduate degree (transverse movements), we build on the network outlined in the previous section. We take the same set of nodes, with the same community structures, but weight edges by the number of students who took course $i$ \textbf{before} course $j$. From this new directed network, we are able to assess the movements that students make between communities. To answer our questions regarding the transverse movements that students make from one field to another, we aggregate the number of movements from courses within community $m$ to courses within community $n$ (see Fig~\ref{Fig3}). For example, the courses in the \textit{Physics-Maths} community in Fig~\ref{Fig2} become a single Physics-Maths node in Fig~\ref{Fig3}. Outgoing edges between communities are aggregated into a single outgoing edge, with a weighting equivalent to the sum of all outgoing edges weights from nodes in the community. Edges between courses within a community are similarly aggregated, and are represented as self-loops (a link from a node to itself) in Fig~\ref{Fig3}. To investigate how transverse movements differ by gender, we calculate the Odds Ratio (OR) with 99\% Confidence Intervals (CI) of a female student moving from community $m$ to community $n$ over a male student. OR are generated using the following formula\cite{field2012discovering}: 
 
     $$\frac{A/C}{B/D}$$
@@ -188,28 +191,28 @@ The above heat map represents the same underlying data as that which is used in 
 \label{Fig4}
 \end{figure*}
 
-\subsubsection*{Vertical Movements}
+\subsubsection{Vertical Movements}
 We also seek to investigate how male and female students with differing levels of prior achievement choose to invest their capital. Are there gender differences in the vertical movements (moving upwards or downwards in the objective rankings in a field) that students make from one stage to the next? Do male and female students with different levels of prior achievement choose to invest their capital differently? To understand the nature of students' vertical movements between within and between fields, we incorporate student achievement data into our previously established network. For each course, we have the student grade point unit score (i.e., their level of achievement). Our data set also includes an average high school achievement measure Grade Point Equivalent (GPE), for the majority of students in our network. This allows us to look at the transitions that male and female students make from high school to university study. 
 
 We are particularly interested in the movements that students make going from high school to three specific stage one courses: AP1, AP2, and PLS. We also investigate the gender differences in vertical movements that students make from these physics courses to our detected fields, and between our detected fields. For our detected fields we calculate a Grade Point Average (GPA) score for each student (scored on a continuous scale of 0-9), in which we take the mean of the student's grade point unit scores for each course they took within the community. For example, the Physics-Maths GPA score will be a student's mean average grade point unit score for all of the courses they took within the Physics-Maths community.
 
 As outlined by Bourdieu, an individual's power in a field is determined by the composition and volume of capital they hold \textit{relative} to other individuals. As our goal is to compare the relative vertical position of students within and between fields, we convert the achievement scores (GPE for high school, GPU for the key stage one courses, and GPA for the communities) into percentile ranks. Standardizing achievement in this manner facilitates comparisons across fields. Top achievers in a field will have a percentile rank score of 100, whilst low achievers will have a percentile rank score closer to 0. We can then compare the change in percentile rank scores for male and female students across our network. To describe the gender differences in vertical movements, we use independent 2-group Mann-Whitney U Tests (a non-parametric t-test) to test the median difference in percentile rank change between male and female students. Non-parametric tests were chosen as they are robust to outliers and skewed distributions\cite{erceg2008modern}, and we do not assume the distribution of rank changes to be normal. We were then able to determine whether there were any significant differences between male and female students gaining in relative performance across fields, with the null hypothesis being that there are no gender differences in percentile rank change. We report effect sizes in terms of the Common Language (CL) effect size\cite{mcgraw1992common}, which is robust, widely used and easy to interpret.\cite{erceg2008modern, lakens2013calculating, kerby2014simple} As described by Lakens\cite{lakens2013calculating}, the CL effect size indicates: ``the probability that a randomly sampled person from one group will have a higher observed measurement than a randomly sampled person from the other group.'' In our case, the CL effect size indicates the probability that a female student will have a higher change in rank after moving to a new field over a male student who made the same move. We also report the OR (with 99\% CI) of top, middle, and low achieving female students enrolling in different fields compared to their male counterparts. These achievement groups are based on percentile ranks of all students split into three equally sized bins. We explore the movements from high school to key stage one university courses specifically, and from key stage one physics courses to detected fields. 
 
-\section*{Results and Discussion}
+\section{Results and Discussion}
 Networks showing the revealed communities of courses that students take can be seen in Fig~\ref{Fig2} and Fig~\ref{Fig3}. Fig~\ref{Fig2} shows the network of courses offered by the University of Auckland (UoA) between the years 2009 and 2014, with communities indicating courses that tended to be taken together within students' undergraduate degrees (represented by the different colours). The communities included (in ascending order of aggregated course enrollments): Medical Science, Computer Science, Biological Science, Liberal Arts, Physics-Maths, Engineering, Finance-Marketing, Geography-Geology, Psychology, Chemistry, Statistics, Surgery, Pharmacy, Food Science, Optometry, Sports Science, Population Health, Nursing, Law, Ancient History, Japanese, Chinese, and Chemical Materials.
 
 The use of Revealed Comparative Preference (RCP) in conjunction with the community detection revealed underlying academic fields in which physics student participated, as indicated by the combinations of courses that students enrolled in. Physics courses (including AP1 and AP2, the first prerequisites for a physics major at the UoA) and mathematics courses were located the same field, which we label \textit{Physics-Maths}. PLS, a physics course required for students wanting to study medicine, was located in the field of \textit{Medical Sciences}. We report the counts of students per community, with the percentage of female students, in Table~\ref{Table1}. Liberal Arts, Biological Science, and Medical Science were the three largest communities based on number of unique students enrolled in each field. Medical Science, Computer Science, and Biological Science were the largest communities in terms of total enrollments (an individual student may be enrolled in more than one course per field). In terms of the proportion of female students per community, Physics-Maths (0.25), Computer Science (0.28), and Chinese (0.27) were the most male dominated. Nursing (0.81), Optometry (0.61), and Pharmacy (0.58) were the most female dominated. 
 
 The network and RCP approach provides a non-biased method of classifying the fields in which students are participating in. The use of RCP shows that disciplinary labels (i.e., `Physics') are imperfect in classifying the patterns of courses that students enrol in. Although PLS is a physics course, it has a higher affinity with the life sciences, and our community detection approach reflects this by locating PLS within the field of Medical Science. For example, the percentage of female students enrolled in \textit{all} physics courses (including PLS) was 40\%. Our community detection shows that female students only made up around 25\% of the main Physics-Maths community. The difference between these percentages is substantial, and raises important implications for the way in which universities report the number of students studying in different disciplines.
 
-\subsection*{Transverse Movements}
+\subsection{Transverse Movements}
 We first wanted to understand whether there were gender differences in UoA physics students moving from one academic field to another. Our results regarding these transverse movements (more detail is given in the table in \nameref{S2_Table}) show that female students were around 1.8 (OR $=$ 1.82, CI: 1.63-2.02) times more likely to take a course in Biological Science after taking a course in Physics-Maths, and 1.4 (OR $=$ 1.44, CI: 1.40-1.47) times more likely to take a further course in Biological Science after taking a previous Biological Science course. On the other hand, male students were around 2 (OR $=$ 0.51, CI: 0.48-0.56) times more likely to take a course in Physics-Maths after taking a course in Biological Science. There were no significant gender differences in students taking a course in Physics-Maths after taking a previous course in that community. Male students were consistently more likely to take a course in Computer Science after taking a previous course in another community, for example going from Biological Science (OR = 0.44,CI: 0.42-0.46), Physics-Maths (OR $=$ 0.52 , CI: 0.50-0.54), and Computer Science (OR $=$ 0.44, CI: 0.43-0.45).
  
 The above results show differences in the transverse movements that students make between fields. Female students were nearly twice as likely to switch into Biological Sciences after Physics-Maths, with male students nearly twice as likely to go the opposite direction. Thus, the results of the current study show that gender disparities are evident, not only in the fields in which students choose to study (see Table~\ref{Table1}), but also in the transverse movements made between fields. These findings are in line with previous research that shows that the life science disciplines (biology, medicine etc.) tend to be more popular for female students, while physics, maths, computer science and engineering tend to be more popular for male students.\cite{NSF, Cunningham_2015,Kost_Smith_2010,Heilbronner_2012, Stevanovic_2013, InstituteofPhysics_2012, Smith_2011, EducationCounts_2016a, Kennedy_2014, Semela_2010} Male students were consistently more likely to switch into computer science regardless of prior field. This highlights the field of computer science as a key area of future investigation, especially in the context of New Zealand STEM education.
 
 Whilst the above findings indicate gender disparities in student enrollments, it is important to consider the achievement levels of students who enter in to different fields, and whether achievement impacts on the movements that students make. We wanted to know whether there were gender differences in the persistence of UoA students in physics, accounting for student achievement. The question we now ask is where did male and female students with differing levels of prior achievement choose to invest their capital? We look specifically at students coming from high school, to the key stage one physics courses (AP1, AP2, and PLS) and to the disciplinary fields revealed in our network. 
 
-\subsection*{Vertical Movements}
+\subsection{Vertical Movements}
 We investigated the impact of student achievement on student enrollment in two ways. We firstly report the number of top, middle, and low achievers who made movements from high school to the key stage one physics courses (AP1, AP2 and PLS), and to the fields revealed in our network. We then assessed the vertical movements that students made by analyzing gender differences in the change in objective rankings within and between fields. We begin by reporting the progression of students from high school to university physics. High school students were split into three equally sized bands based on achievement rankings. As highlighted in Fig 5, the top achieving group is gender balanced (50\% female students), while the middle achieving (40\% female students), and low achieving groups (33\% female students), have fewer female students. 
 
 \begin{figure*}[!ht]
@@ -248,7 +251,7 @@ The above density plots show the distribution of rank change going from high sch
 
 These results somewhat echo the findings of Kost-Smith and colleagues.\cite{Kost_Smith_2010} They found that male students tended to outperform female students on post-test physics concept inventory scores, despite there being no gender differences in pre-test scores. Based on this, we would expect male students in our sample to also increase their relative position in the field of physics after first year study. With that being said, the gender differences in the vertical movements we did find for middle and low achieving students were relatively small, and non-existent for top achieving students. The top achieving female students in our sample who chose to progress in physics likely have a habitus that is just as congruent with physics as the male students (i.e., they feel that physics is `for them'). However, taken in the context with our other findings that female students were less likely to progress from high school to AP1, or from AP1 to AP2, questions must be asked about the distribution of physics-related capital and the development of physics habitus \textit{before} university education, particularly for middle and low achieving students. Many studies point to the late childhood and early teenage years as a key formative stages\cite{archer2013aspires,DeWitt2014,Baram_Tsabari_2010} for identity within science. Future studies of tertiary education in New Zealand should investigate the role of science identity in subject selection decisions further.
 
-\subsection*{Implications}
+\subsection{Implications}
 The current study offers a detailed account of the movements that students make through university physics. Our results show that female students were less likely to progress from high school to AP1, regardless of prior achievement, while low achieving female AP1 students were less likely to progress to AP2. The findings of the current study suggest that more needs to be done to ensure that physics is perceived as a viable option for female students and high achieving students (and particularly high achieving female students). This can be done by using interventions to boost the value that science capital holds in all areas of society. Echoing the arguments of Claussen and Osborne\cite{Claussen_2013} and Archer and colleagues\cite{Archer2012}, science education in New Zealand, and internationally, needs to highlight the utility value of physics in culture, in boosting scientific literacy, and employment. 
 
 However, we argue that boosting the value and access to capital, despite being a necessary goal for boosting the numbers of students in physics, is insufficient to tackle gender disparities. Following our research framework, we should seek to transform the habitus of students to encourage them to invest their capital in physics. We need to continue to change the culture of physics so that it is more likely to be viewed as a viable study option. Whilst we do not want to force students to study in areas where they do not want to be, we echo the sentiments of Cheryan and colleagues\cite{cheryan2017some}, who state:
@@ -268,529 +271,16 @@ Following this logic, culture change in the field may require forced institution
 
 Beyond our research findings, the current study demonstrates the utility of using network analysis and Bourdieu together. Whilst network analysis serves as a good method for representing Bourdieu's concept of field, Bourdieu's theory provides a rich interpretive lens. Our approach carries many benefits over other, more simplistic frameworks, such as the leaky pipeline. Employing the concepts of field, capital and habitus allow us to understand the objective structure of physics, whilst respecting the subjective contexts in which students are placed. Doing so removes stigma that can be attached to students who `leak' from the physics education pipeline. Emphasizing the contexts that students are situated in allows us as researchers to place our findings in a broader context and formulate suitable interventions to boost the physics enrollments of underrepresented groups. 
 
-\subsection*{Limitations}
+\subsection{Limitations}
 There are limitations to the current work that future studies should address. Firstly, our data set is limited to UoA physics students, and included only course selection and performance information, and minimal demographic information. We did not have data regarding the course selection information of students prior to university, whilst our measure of high school achievement was a general measure and not subject specific. More detailed data would have provided more information regarding students' educational trajectories. With that being said, our results show the utility of working with student record data. Our network analysis, whilst simple, also provides a strong framework for working with more complex data; for example, investigating the distribution of economic, cultural, social capital across the network.
 
 Whilst we argue that our network analysis approach enables us to draw many conclusions from our data, our study would also have benefited from combining our quantitative analysis with qualitative measures. We have used a quantitative approach to defining the field, and used evidence from other research studies to draw conclusions from our data. Whilst this approach is informative, qualitative approaches can provide even more context specific details. Bourdieu highlighted the need to break the dichotomy between the aim of understanding the `objective reality' (the overall distributions of groups and relationships between them) and the aim of understanding ``not `reality', but agents' representations of it''.\cite{Bourdieu_1986} Surveys and interviews of students would provide contextual and fine-grained detail that would complement our quantitative network analysis. Qualitative analysis may also be a more appropriate way to investigate gender as a non-binary construct.  
 
 Despite having access to information regarding the ethnicity of students, we decided not to present this information in the current analysis. This is due to the fact that preliminary analysis showed low cell sizes for ethnic groups other than New Zealand European and Asian students in physics, in particular M\={a}ori and Pacific Island students (these findings are available on request). When possible, future studies should make use of an intersectional research design (one that explores the interaction between gender, ethnicity, social class etc.). This is especially important when using a Bourdieusian framework to interpret results. As suggested by Bourdieu: ``The individuals grouped in a class that is constructed in a particular respect... always bring with them secondary properties''.\cite{Bourdieu1984} Understanding the intersection of student characteristics would allow us to include the secondary properties that Bourdieu speaks of. The authors are currently conducting further analysis to understand why there were low cell sizes for minority groups using data from earlier educational stages (i.e., secondary school). 
 
-\section*{Conclusion}
+\section{Conclusion}
 The current study investigated gender differences for undergraduate physics students at the University of Auckland (UoA) through the use of network analysis on student data, with an interpretive lens based on the work of Pierre Bourdieu. Our network analysis revealed the different academic fields in which students are situated. We outline the utility of networks in visualizing Bourdieu's concepts of vertical and transverse movements within and across fields. Analysis showed gender differences in transverse movements (moving from one field to another) consistent with gender stereotypes: female students were more likely to enrol in life science fields (Biological Science, Medical Science), while male students were more likely to enrol in the Physics-Maths and Computer Science fields.Analysis of a UoA student-course network revealed that female high school students are more likely to study life sciences at university compared to physics, and this is particularly true for high achieving students in this group. Furthermore, of the female students who did enter physics in their first year, low achieving students in this group were less likely to progress to further physics compared to their male counterparts. We relate these findings to Bourdieu's concepts of field, capital and habitus (Fig~\ref{Fig1}). High achieving secondary school students (especially female students) may see more of a return for their capital in the life sciences compared to physics. Whilst it may be that physics does a poor job of highlighting its value, we argue that female students will continue to suffer constraints in their subject selection until the `smog of bias'\cite{Kost_Smith_2010} in physics is addressed. As outlined by Kost-Smith and colleagues\cite{Kost_Smith_2010}, it is unlikely that a single factor can account for the gender disparities seen in physics enrollment. We suggest that the various factors that have been linked to the attrition of women from physics (e.g., negative gender stereotypes, lack of female role models etc.) culminates into a gendered habitus that increases the likelihood of students viewing physics as a field that men do and where women are unwelcome. We close by discussing potential avenues for addressing gender disparities, which focus on not only boosting access to, and the value of, physics related capital, but also transforming the culture of the field so that all students (and especially women) view physics as a feasible study option.
 
-
-\begin{thebibliography}{10}
-
-\bibitem{Abraham_2014}
-Abraham J, Barker K.
-\newblock {Exploring Gender Difference in Motivation, Engagement and Enrolment
-  Behaviour of Senior Secondary Physics Students in New South Wales}.
-\newblock Research in Science Education. 2014;45(1):59--73.
-\newblock doi:{10.1007/s11165-014-9413-2}.
-
-\bibitem{Stevanovic_2013}
-Stevanovic B.
-\newblock {Girls in Science and Technology in Secondary and Post-Secondary
-  Education: The Case of France}.
-\newblock British Journal of Sociology of Education. 2013;35(4):541--558.
-\newblock doi:{10.1080/01425692.2013.791229}.
-
-\bibitem{Smith_2011}
-Smith E.
-\newblock {Women into Science and Engineering? Gendered Participation in Higher Education STEM Subjects}.
-\newblock British Educational Research Journal. 2011;37(6):993--1014.
-\newblock doi:{10.1080/01411926.2010.515019}.
-
-\bibitem{mullis2016timss}
-Mullis I, Martin M, Foy P, Hooper M. TIMSS 2015 International Results in
-  Mathematics. TIMSS \& PIRLS International Study Center at Boston College;
-  2016.
-
-\bibitem{NSF}
-{National Science Foundation}. Women, Minorities, and Persons with Disabilities
-  in Science and Engineering: Field of degree: Women; 2017.
-\newblock \url{https://www.nsf.gov/statistics/2017/nsf17310/digest/fod-women/
-  }.
-
-\bibitem{Cunningham_2015}
-Cunningham BC, Hoyer KM, Sparks D.
-\newblock {Gender Differences in Science, Technology, Engineering, and
-  Mathematics (STEM) Interest, Credits Earned, and NAEP Performance in the 12th
-  Grade. Stats in Brief. NCES 2015-075.}
-\newblock National Center for Education Statistics. 2015;.
-
-\bibitem{Kost_Smith_2010}
-Kost-Smith LE, Pollock SJ, Finkelstein ND.
-\newblock {Gender Disparities in Second-Semester College Physics: The
-  Incremental Effects of a `Smog of Bias'}.
-\newblock Physical Review Special Topics - Physics Education Research.
-  2010;6(2):1--17.
-\newblock doi:{10.1103/physrevstper.6.020112}.
-
-\bibitem{Heilbronner_2012}
-Heilbronner NN.
-\newblock {The STEM Pathway for Women: What Has Changed?}
-\newblock Gifted Child Quarterly. 2012;57(1):39--55.
-\newblock doi:{10.1177/0016986212460085}.
-
-\bibitem{Huyer2007}
-Huyer G Sophia;~Westholm.
-\newblock Gender indicators in science, engineering and technology: an
-  information toolkit.
-\newblock UNESCO; 2007.
-
-\bibitem{InstituteofPhysics_2012}
-{Institute of Physics}.
-\newblock {It's Different For Girls: The Influence of Schools}.
-\newblock London, United Kingdom: Institute of Physics; 2012.
-
-\bibitem{InstituteofPhysics_2013}
-{Institute of Physics}.
-\newblock {Closing Doors: Exploring gender and subject choice in schools}.
-\newblock London, United Kingdom: Institute of Physics; 2013.
-
-\bibitem{EducationCounts_2016a}
-{Education Counts}. Secondary subject roll by learning year level \& subject
-  name - 1 july 2015; 2016.
-\newblock
-  \url{https://www.educationcounts.govt.nz/statistics/schooling/student-numbers/subject-enrollment
-  }.
-
-\bibitem{Kennedy_2014}
-Kennedy JP, Lyons T, Quinn F.
-\newblock {The Continuing Decline of Science and Mathematics Enrolments in
-  Australian High Schools}.
-\newblock Teaching Science. 2014;60(2):34--46.
-
-\bibitem{Semela_2010}
-Semela T.
-\newblock {Who is Joining Physics and Why? Factors Influencing the Choice of
-  Physics among Ethiopian University Students.}
-\newblock International Journal of Environmental and Science Education.
-  2010;5(3):319--340.
-
-\bibitem{kelly2016social}
-Kelly AM.
-\newblock Social cognitive perspective of gender disparities in undergraduate
-  physics.
-\newblock Physical Review Physics Education Research. 2016;12(2):020116.
-
-\bibitem{Hofer_2016}
-Hofer SI, Stern E.
-\newblock {Underachievement in Physics: When Intelligent Girls Fail}.
-\newblock Learning and Individual Differences. 2016;51:119--131.
-\newblock doi:{10.1016/j.lindif.2016.08.006}.
-
-\bibitem{Ellis_2016}
-Ellis J, Fosdick BK, Rasmussen C.
-\newblock {Women 1.5 Times More Likely to Leave STEM Pipeline after Calculus Compared to Men: Lack of Mathematical Confidence a Potential Culprit}.
-\newblock {PLoS ONE}. 2016;11(7):1--14.
-\newblock doi:{10.1371/journal.pone.0157447}.
-
-\bibitem{marshman2018female}
-Marshman EM, Kalender ZY, Nokes-Malach T, Schunn C, Singh C.
-\newblock Female students with A's have similar physics self-efficacy as male students with C's in introductory courses: A cause for alarm?
-\newblock Physical Review Physics Education Research. 2018;14(2):020123.
-
-\bibitem{cheryan2017some}
-Cheryan S, Ziegler SA, Montoya AK, Jiang L.
-\newblock Why are some STEM fields more gender balanced than others?
-\newblock Psychological Bulletin. 2017;143(1):1.
-
-\bibitem{Brewe_2016}
-Brewe E, Sawtelle V.
-\newblock {Editorial: Focused Collection: Gender in Physics}.
-\newblock Physical Review Physics Educucation Research. 2016;12(2):1--4.
-\newblock doi:{10.1103/physrevphyseducres.12.020001}.
-
-\bibitem{Blickenstaff_2005}
-Blickenstaff JC.
-\newblock {Women and Science Careers: Leaky Pipeline or Gender Filter?}
-\newblock Gender and Education. 2005;17(4):369--386.
-\newblock doi:{10.1080/09540250500145072}.
-
-\bibitem{Bourdieu1984}
-Bourdieu P.
-\newblock {Distinction: A Social Critique of the Judgement of Taste}.
-\newblock Routledge; 1984.
-
-\bibitem{de2003fields}
-De~Nooy W.
-\newblock Fields and networks: correspondence analysis and social network
-  analysis in the framework of field theory.
-\newblock Poetics. 2003;31(5):305--327.
-
-\bibitem{bottero2011worlds}
-Bottero W, Crossley N.
-\newblock Worlds, fields and networks: Becker, Bourdieu and the structures of
-  social relations.
-\newblock Cultural sociology. 2011;5(1):99--119.
-
-\bibitem{Bourdieu1992}
-Bourdieu P, Waquant L. {The Practice of Reflexive Sociology}; 1992.
-\newblock Available from:
-  \url{http://www.public.iastate.edu/~carlos/607/readings/bourdieu2.pdf}.
-
-\bibitem{Schiebinger_2001}
-Schiebinger L.
-\newblock {Has Feminism Changed Science?}. vol.~4 of 10.
-\newblock 1st ed. Cambridge, MA: Harvard University Press; 2001.
-
-\bibitem{Cannady2014}
-Cannady MA, Greenwald E, Harris KN.
-\newblock {Problematizing the STEM Pipeline Metaphor: Is the STEM Pipeline
-  Metaphor Serving Our Students and the STEM Workforce?}
-\newblock Science Education. 2014;98(3):443--460.
-\newblock doi:{10.1002/sce.21108}.
-
-\bibitem{Nosek_2009}
-Nosek BA, Smyth FL, Sriram N, Lindner NM, Devos T, Ayala A, et~al.
-\newblock {National Differences in Gender-Science Stereotypes Predict National
-  Sex Differences in Science and Math Achievement}.
-\newblock Proceedings of the National Academy of Sciences.
-  2009;106(26):10593--10597.
-\newblock doi:{10.1073/pnas.0809921106}.
-
-\bibitem{Archer2012}
-Archer L, DeWitt J, Osborne J, Dillon J, Willis B, Wong B.
-\newblock {Science Aspirations, Capital, and Family Habitus: How Families Shape
-  Children's Engagement and Identification With Science}.
-\newblock American Educational Research Journal. 2012;49(5):881--908.
-\newblock doi:{10.3102/0002831211433290}.
-
-\bibitem{Archer2014}
-Archer L, Dewitt J, Willis B.
-\newblock {Adolescent boys' science aspirations: Masculinity, capital, and power}.
-\newblock Journal of Research in Science Teaching. 2014;51(1):1--30.
-\newblock doi:{10.1002/tea.21122}.
-
-\bibitem{Archer_2015}
-Archer L, Dawson E, DeWitt J, Seakins A, Wong B.
-\newblock {`Science Capital': A Conceptual, Methodological, and Empirical
-  Argument for Extending Bourdieusian Notions of Capital Beyond the Arts}.
-\newblock Journal of Research in Science Teaching. 2015;52(7):922--948.
-\newblock doi:{10.1002/tea.21227}.
-
-\bibitem{Reay2004}
-Reay D.
-\newblock {`It's all becoming a habitus': beyond the habitual use of habitus in educational research}.
-\newblock British Journal of Sociology of Education. 2004;25(4):431--444.
-\newblock doi:{10.1080/0142569042000236934}.
-
-\bibitem{Smith_1887}
-Smith A.
-\newblock {Of the Nature, Accumulation and Employment of Stock}.
-\newblock In: Soares SM, editor. An Inquiry into the Nature and Causes of the Wealth of Nations. MetaLibri Digital; 1887. p. 214--220.
-\newblock Available from:
-  \url{https://www.ibiblio.org/ml/libri/s/SmithA_WealthNations_p.pdf}.
-
-\bibitem{Bourdieu_1986}
-Bourdieu P.
-\newblock {The Forms of Capital}.
-\newblock In: Richardson J, editor. Handbook of Theory and Research for the Sociology of Education. Connecticut, US: Greenwood Publishing Group; 1986. p.
-  47--58.
-
-\bibitem{hilgers2014introduction}
-Hilgers M, Mangez E.
-\newblock Introduction to Pierre Bourdieu's theory of Social Fields.
-\newblock Bourdieu's theory of social fields: Concepts and applications. 2014;
-  p.~1.
-
-\bibitem{EducationCounts_2016b}
-{Education Counts}.
-\newblock {Secondary Subject Roll by Learning Year Level \& Subject Name - 1 July 2015}.
-\newblock Wellington, New Zealand: EducationCounts, Ministry of Education;
-  2016.
-\newblock Available from:
-  \url{https://www.educationcounts.govt.nz/statistics/schooling/student-numbers/subject-enrolment}.
-
-\bibitem{Bray_2011}
-Bray B, Timewell E.
-\newblock {Women in Science: A 2011 Snapshot}.
-\newblock Christchurch, New Zealand: Association for Women in the Sciences (AWIS); 2011.
-\newblock Available from:
-  \url{http://www.awis.org.nz/news-and-events/publications/women-in-science-snapshot-statistics/}.
-
-\bibitem{Kelly_1985}
-Kelly A.
-\newblock {The Construction of Masculine Science}.
-\newblock British Journal of Sociology of Education. 1985;6(2):133--154.
-\newblock doi:{10.1080/0142569850060201}.
-
-\bibitem{Ivie_2013}
-Ivie R, Tesfaye CL, Czujko R, Chu R.
-\newblock The Global Survey of Physicists: A Collaborative Effort Illuminates
-  the Situation of Women in Physics.
-\newblock In: AIP Conference Proceedings. {American Institute of Physics}
-  Publishing; 2013. p. 53--61.
-
-\bibitem{Ost_2010}
-Ost B.
-\newblock {The Role of Peers and Grades in Determining Major Persistence in the Sciences}.
-\newblock Economics of Education Review. 2010;29(6):923--934.
-\newblock doi:{10.1016/j.econedurev.2010.06.011}.
-
-\bibitem{Brown2010}
-Brown CS, Leaper C.
-\newblock {Latina and European American Girls' Experiences with Academic Sexism and their Self-Concepts in Mathematics and Science During Adolescence}.
-\newblock Sex Roles. 2010;63(11):860--870.
-\newblock doi:{10.1007/s11199-010-9856-5}.
-
-\bibitem{Hazari_2010}
-Hazari Z, Sonnert G, Sadler PM, Shanahan MC.
-\newblock {Connecting High School Physics Experiences, Outcome Expectations, Physics Identity, and Physics Career Choice: A Gender Study}.
-\newblock Journal of Research in Science Teaching. 2010; p. 978--1003.
-\newblock doi:{10.1002/tea.20363}.
-
-\bibitem{Hazari2013}
-Hazari Z, Sadler PM, Sonnert G.
-\newblock {The Science Identity of College Students: Exploring the Intersection of Gender, Race, and Ethnicity}.
-\newblock Journal of College Science Teaching. 2013;42(5):82--91.
-
-\bibitem{Hazari2017}
-Hazari Z, Brewe E, Goertzen RM, Hodapp T.
-\newblock {The Importance of High School Physics Teachers for Female Student's Physics Identity and Persistence}.
-\newblock The Physics Teacher. 2017;55(2):96--99.
-\newblock doi:{10.1119/1.4974122}.
-
-\bibitem{Litzler2014}
-Litzler E, Samuelson CC, Lorah JA.
-\newblock {Breaking it down: Engineering student STEM confidence at the intersection of race/ethnicity and gender}.
-\newblock Research in Higher Education. 2014;55(8):810--832.
-\newblock doi:{10.1007/s11162-014-9333-z}.
-
-\bibitem{Concannon2009}
-Concannon JP, Barrow LH.
-\newblock {A cross-sectional study of engineering students' self-efficacy by gender, ethnicity, year, and transfer status}.
-\newblock Journal of Science Education and Technology. 2009;18(2):163--172.
-\newblock doi:{10.1007/s10956-008-9141-3}.
-
-\bibitem{Sharma_2011}
-Sharma MD, Bewes J.
-\newblock {Self-Monitoring: Confidence, Academic Achievement and Gender Differences in Physics}.
-\newblock Journal of Learning Design. 2011;4(3):1--13.
-\newblock doi:{10.5204/jld.v4i3.76}.
-
-\bibitem{Beth_Kurtz_Costes_2008}
-Kurtz-Costes B, Rowley SJ, Harris-Britt A, Woods TA.
-\newblock {Gender Stereotypes about Mathematics and Science and Self-Perceptions of Ability in Late Childhood and Early Adolescence}.
-\newblock Merrill-Palmer Quarterly. 2008;54(3):386--409.
-\newblock doi:{10.1353/mpq.0.0001}.
-
-\bibitem{Sawtelle_2012}
-Sawtelle V, Brewe E, Kramer LH.
-\newblock {Exploring the Relationship Between Self-Efficacy and Retention in Introductory Physics}.
-\newblock Journal of Research in Science Teaching. 2012;49(9):1096--1121.
-\newblock doi:{10.1002/tea.21050}.
-
-\bibitem{Nash1999}
-Nash R.
-\newblock Bourdieu, `Habitus', and Educational Research: Is It All Worth the Candle?
-\newblock British Journal of Sociology of Education. 1999;20(2):175--187.
-
-\bibitem{Dimaggio1982}
-Dimaggio P.
-\newblock {Cultural capital and school success: The impact of status cutlure participation on the grades of U.S. high school students}.
-\newblock American Sociological Review. 1982;47(2):189--201.
-\newblock doi:{10.2307/2094962}.
-
-\bibitem{archer2013aspires}
-Archer L, Osborne J, DeWitt J.
-\newblock ASPIRES: Young people's science and career aspirations, age 10--14.
-\newblock London: King's College. 2013;.
-
-\bibitem{Archer_2012}
-Archer L, DeWitt J, Osborne J, Dillon J, Willis B, Wong B.
-\newblock {Science aspirations, capital, and family habitus how families shape children's engagement and identification with science}.
-\newblock American Educational Research Journal. 2012;49(5):881--908.
-
-\bibitem{ong2005body}
-Ong M.
-\newblock Body projects of young women of color in physics: Intersections of
-  gender, race, and science.
-\newblock Social problems. 2005;52(4):593--617.
-
-\bibitem{Moss_2012}
-Moss-Racusin CA, Dovidio JF, Brescoll VL, Graham MJ, Handelsman J.
-\newblock {Science Faculty's Subtle Gender Biases Favor Male Students}.
-\newblock Proceedings of the National Academy of Sciences.
-  2012;109(41):16474--16479.
-
-\bibitem{Potvin_2016}
-Potvin G, Hazari Z.
-\newblock {Student Evaluations of Physics Teachers: On the Stability and Persistence of Gender Bias}.
-\newblock Physics Review Physics Education Research. 2016;12(2).
-\newblock doi:{10.1103/physrevphyseducres.12.020107}.
-
-\bibitem{Banchefsky2016}
-Banchefsky S, Westfall J, Park B, Judd CM.
-\newblock {But You Don't Look Like A Scientist!: Women Scientists with Feminine Appearance are Deemed Less Likely to be Scientists}.
-\newblock Sex Roles. 2016;75(3-4):95--109.
-\newblock doi:{10.1007/s11199-016-0586-1}.
-
-\bibitem{Buccheri_2011}
-Buccheri G, G{\"{u}}rber NA, Br{\"{u}}hwiler C.
-\newblock {The Impact of Gender on Interest in Science Topics and the Choice of Scientific and Technical Vocations}.
-\newblock International Journal of Science Education. 2011;33(1):159--178.
-\newblock doi:{10.1080/09500693.2010.518643}.
-
-\bibitem{Su_2009}
-Su R, Rounds J, Armstrong PI.
-\newblock {Men and Things, Women and People: A Meta-Analysis of Sex Differences in Interests.}
-\newblock Psychological Bulletin. 2009;135(6):859--884.
-\newblock doi:{10.1037/a0017364}.
-
-\bibitem{B_E_2013}
-B{\o}e MV, Henriksen EK.
-\newblock {Love It or Leave It: Norwegian Students' Motivations and Expectations for Postcompulsory Physics}.
-\newblock Science Education. 2013;97(4):550--573.
-\newblock doi:{10.1002/sce.21068}.
-
-\bibitem{Baram_Tsabari_2010}
-Baram-Tsabari A, Yarden A.
-\newblock Quantifying the Gender Gap in Science Interests.
-\newblock International Journal of Science and Mathematics Education.
-  2010;9(3):523--550.
-\newblock doi:{10.1007/s10763-010-9194-7}.
-
-\bibitem{Kj_rnsli_2011}
-Kj{\ae}rnsli M, Lie S.
-\newblock Students' Preference for Science Careers: International comparisons based on PISA 2006.
-\newblock International Journal of Science Education. 2011;33(1):121--144.
-\newblock doi:{10.1080/09500693.2010.518642}.
-
-\bibitem{Bottia_2015}
-Bottia MC, Stearns E, Mickelson RA, Moller S, Parker AD.
-\newblock {The Relationships among High School STEM Learning Experiences and Students' Intent to Declare and Declaration of a STEM Major in College.}
-\newblock Teachers College Record. 2015;117(3):1--46.
-
-\bibitem{Sadler_2012}
-Sadler PM, Sonnert G, Hazari Z, Tai R.
-\newblock {Stability and Volatility of STEM Career Interest in High School: A Gender Study}.
-\newblock Science Education. 2012;96(3):411--427.
-\newblock doi:{10.1002/sce.21007}.
-
-\bibitem{Black2016}
-Black L, Hernandez-Martinez P.
-\newblock Re-thinking science capital: The role of `capital' and `identity' in mediating students' engagement with mathematically demanding programmes at  university.
-\newblock Teaching Mathematics and its Applications. 2016;35(3):131--143.
-\newblock doi:{10.1093/teamat/hrw016}.
-
-\bibitem{UoA_2016}
-{University of Auckland}. What is a GPE Grade Point Equivalent?; 2016.
-\newblock \url{https://uoa.custhelp.com/app/answers/detail/a_id/3867/}.
-
-\bibitem{white1976social}
-White HC, Boorman SA, Breiger RL.
-\newblock Social structure from multiple networks. I. Blockmodels of roles and positions.
-\newblock American journal of sociology. 1976;81(4):730--780.
-
-\bibitem{Balassa1965}
-Balassa B.
-\newblock {Trade Liberalisation and Revealed Comparative Advantage}.
-\newblock The Manchester School. 1965;33(2):99--123.
-\newblock doi:{10.1111/j.1467-9957.1965.tb00050.x}.
-
-\bibitem{balland2017economic}
-Balland PA. Economic Geography in R: Introduction to the EconGeo package; 2017.
-\newblock Available at SSRN: \url{https://ssrn.com/abstract=2962146} or
-  \url{http://dx.doi.org/10.2139/ssrn.2962146}.
-
-\bibitem{Edler_2017}
-Edler D, Rosvall M. The MapEquation software package; 2017.
-
-\bibitem{csardi2006igraph}
-Csardi G, Nepusz T, et~al.
-\newblock The igraph software package for complex network research.
-\newblock InterJournal, Complex Systems. 2006;1695(5):1--9.
-
-\bibitem{field2012discovering}
-Field A, Miles J, Field Z.
-\newblock Discovering statistics using R.
-\newblock Sage publications; 2012.
-
-\bibitem{erceg2008modern}
-Erceg-Hurn DM, Mirosevich VM.
-\newblock Modern robust statistical methods: an easy way to maximize the accuracy and power of your research.
-\newblock American Psychologist. 2008;63(7):591.
-
-\bibitem{mcgraw1992common}
-McGraw KO, Wong S.
-\newblock A common language effect size statistic.
-\newblock Psychological bulletin. 1992;111(2):361.
-
-\bibitem{lakens2013calculating}
-Lakens D.
-\newblock Calculating and reporting effect sizes to facilitate cumulative science: a practical primer for t-tests and ANOVAs.
-\newblock Frontiers in psychology. 2013;4:863.
-
-\bibitem{kerby2014simple}
-Kerby DS.
-\newblock The simple difference formula: An approach to teaching nonparametric correlation.
-\newblock Comprehensive Psychology. 2014;3:11--IT.
-
-\bibitem{Wong2012}
-Wong B.
-\newblock {Identifying with Science: A case study of two 13-year-old high achieving working class British Asian girls}.
-\newblock International Journal of Science Education. 2012;34(1):43--65.
-\newblock doi:{10.1080/09500693.2010.551671}.
-
-\bibitem{Claussen_2013}
-Claussen S, Osborne J.
-\newblock {Bourdieu's Notion of Cultural Capital and its Implications for the Science Curriculum}.
-\newblock Science Education. 2013;97(1):58--79.
-\newblock doi:{10.1002/sce.21040}.
-
-\bibitem{Archer2015a}
-Archer L, Dawson E, DeWitt J, Seakins A, Wong B.
-\newblock {`Science capital': A conceptual, methodological, and empirical argument for extending bourdieusian notions of capital beyond the arts}.
-\newblock Journal of Research in Science Teaching. 2015;52(7):922--948.
-\newblock doi:{10.1002/tea.21227}.
-
-\bibitem{Archer_2013}
-Archer L, DeWitt J, Osborne J, Dillon J, Willis B, Wong B.
-\newblock {`Not girly, not sexy, not glamorous': primary school girls' and parents' constructions of science aspirations}.
-\newblock Pedagogy, Culture \& Society. 2013;21(1):171--194.
-\newblock doi:{10.1080/14681366.2012.748676}.
-
-\bibitem{Else_Quest_2013}
-Else-Quest NM, Mineo CC, Higgins A.
-\newblock {Math and Science Attitudes and Achievement at the Intersection of Gender and Ethnicity}.
-\newblock Psychology of Women Quarterly. 2013;37(3):293--309.
-\newblock doi:{10.1177/0361684313480694}.
-
-\bibitem{Sheldrake_2015}
-Sheldrake R, Mujtaba T, Reiss MJ.
-\newblock {Students' Intentions to Study Non-Compulsory Mathematics: the Importance of How Good You Think You Are}.
-\newblock British Educational Research Journal. 2015;41(3):462--488.
-
-\bibitem{LaCosse_2016}
-LaCosse J, Sekaquaptewa D, Bennett J.
-\newblock {STEM Stereotypic Attribution Bias Among Women in an Unwelcoming Science Setting}.
-\newblock Psychology of Women Quarterly. 2016;40(3):378--397.
-\newblock doi:{10.1177/0361684316630965}.
-
-\bibitem{DeWitt2014}
-DeWitt J, Archer L, Osborne J.
-\newblock {Science-related Aspirations Across the Primary Secondary Divide: Evidence from two surveys in England}.
-\newblock International Journal of Science Education. 2014;36(0):1609--1629.
-\newblock doi:{10.1080/09500693.2013.871659}.
-
-\bibitem{master2016computing}
-Master A, Cheryan S, Meltzoff AN.
-\newblock Computing whether she belongs: Stereotypes undermine girls interest and sense of belonging in computer science.
-\newblock Journal of Educational Psychology. 2016;108(3):424.
-
-\bibitem{AthenaSwan}
-{Equality Challenge Unit}. Athena SWAN Charter; 2018.
-\newblock \url{http://www.ecu.ac.uk/equality-charters/athena-swan/}.
-
-\bibitem{Horizon2020}
-{European Commission}. {Horizon 2020 - Promoting Gender Equality in Research and Innovation}; 2018.
-\newblock
-  \url{https://ec.europa.eu/programmes/horizon2020/en/h2020-section/promoting-gender-equality-research-and-innovation}.
-
-\end{thebibliography}
 
 
 
